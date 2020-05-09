@@ -36,6 +36,9 @@ $quote = array (
 
 
 // Create the getRandomQuuote function and name it getRandomQuote
+function getRandomQuote($array){
+
+}
 
 
 
