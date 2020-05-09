@@ -6,8 +6,8 @@
 // Each inner array element should be an associative array
 $quote = array (
     array(
-        'source'=> 'Junko Kaname',
-        'quote' => 'Just because you keep trying to to the righ thing, doesn\'t mean
+        'source' => 'Junko Kaname',
+        'quote'  => 'Just because you keep trying to to the righ thing, doesn\'t mean
         you are garanteed a happy ending.',
         'citation' => 'Puella Magi'
    ),
@@ -17,18 +17,18 @@ $quote = array (
         'citation' => 'Naturo Shippuden'
     ),
     array(
-        'Source' => 'Goku',
-        'Quote' => 'Power comes in a response to a need, not a desire. You have to create that need',
+        'source' => 'Goku',
+        'quote' => 'Power comes in a response to a need, not a desire. You have to create that need',
         'citation' => 'Dragon Ball Z'
     ),
     array(
-        'Source' => 'L Lawliet',
-        'Quote' => 'By trying too hard, we put ourselves at a greater risk',
+        'source' => 'L Lawliet',
+        'quote' => 'By trying too hard, we put ourselves at a greater risk',
         'citation' => 'Death Note'
     ),
     array(
-        'Source' => 'Armin Arlet',
-        'Quote' => 'A person who cannot give up anything , can change nothing',
+        'source' => 'Armin Arlet',
+        'quote' => 'A person who cannot give up anything , can change nothing',
         'citation' => 'Attack on Titans'
     ),
 );
@@ -59,15 +59,15 @@ function printQuote($array){
     we assign the HTML without the span tag for it
 
     */
-    if($array['citation']){
-        $generated = "<p class=\"quote\">" . $array['quote'] . "</p>
-            <p class=\"source\">" . $array['source'] 
-                . "<span class=\"citation\">" . $array['citation'] . "</span>
+    if($current_quote['citation']){
+        $generated = "<p class=\"quote\">" . $current_quote['quote'] . "</p>
+            <p class=\"source\">" . $current_quote['source'] 
+                . "<span class=\"citation\">" . $current_quote['citation'] . "</span>
         </p>";
 
     } else {
-        $generated = "<p class=\"quote\">" . $array['quote'] . "</p>
-        <p class=\"source\">" . $array['source'] .
+        $generated = "<p class=\"quote\">" . $current_quote['quote'] . "</p>
+        <p class=\"source\">" . $current_quote['source'] .
         "</p>";
 
     }

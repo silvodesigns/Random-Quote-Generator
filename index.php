@@ -1,4 +1,12 @@
-<?php include 'inc\functions.php'  ?>
+<?php 
+//displays erros to me on screen in case of any
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +19,13 @@
 <body>
   <div class="container">
     <div id="quote-box">
-      <?php  printQuote($quote);  ?>
-      <?php  echo "Hello"  ?>
+      <?php 
+          include 'inc/functions.php' ;
+          printQuote($quote); 
+
+        
+      ?>
+     
     </div>
     <button id="loadQuote" onclick="window.location.reload(true)" >Show another quote</button>
   </div>
