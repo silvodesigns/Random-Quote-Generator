@@ -47,6 +47,13 @@ function getRandomQuote($array){
 
 
 // Create the printQuote funtion and name it printQuote
+function printQuote($array){
+    $current_quote = getRandomQuote($array);
+    $generated = "<p class=\"quote\">" . $array['quote'] . "</p>
+        <p class=\"source\">" . $array['source'] . "
+         <span class=\"citation\">" . $array['citation'] . "</span>
+         </p>";
+}
 
 
 ?>
