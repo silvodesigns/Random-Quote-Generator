@@ -49,10 +49,34 @@ function getRandomQuote($array){
 // Create the printQuote funtion and name it printQuote
 function printQuote($array){
     $current_quote = getRandomQuote($array);
-    $generated = "<p class=\"quote\">" . $array['quote'] . "</p>
-        <p class=\"source\">" . $array['source'] . "
-         <span class=\"citation\">" . $array['citation'] . "</span>
-         </p>";
+    //initialized empty array
+    $generated;
+
+    /*
+    
+    if the array selected randomly contains a citation we
+    assign the following HTML to the generated variable, otherwise
+    we assign the HTML without the span tag for it
+
+    */
+    if($array['citation']){
+        $generated = "<p class=\"quote\">" . $array['quote'] . "</p>
+            <p class=\"source\">" . $array['source'] 
+                . "<span class=\"citation\">" . $array['citation'] . "</span>
+        </p>";
+
+    } else {
+        $generated = "<p class=\"quote\">" . $array['quote'] . "</p>
+        <p class=\"source\">" . $array['source'] .
+        "</p>";
+
+    }
+
+    //display the results
+    echo $generated;
+         
+         
+           
 }
 
 
