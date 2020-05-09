@@ -1,9 +1,10 @@
 <?php 
 //displays erros to me on screen in case of any
+include 'inc/functions.php' ;
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 
 ?>
@@ -15,19 +16,21 @@ error_reporting(E_ALL);
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="inc/images.js"></script>
+
 </head>
 <body>
   <div class="container">
-    <div id="quote-box">
-      <?php 
-          include 'inc/functions.php' ;
-          printQuote($quote); 
+  <button id="loadQuote" onclick="window.location.reload(true)" >Show another quote</button>
+      <div id="display-quote">
+        <div id="quote-box">
+          <?php 
+            printQuote($quote); 
 
-        
-      ?>
+          ?>
      
+     </div>
     </div>
-    <button id="loadQuote" onclick="window.location.reload(true)" >Show another quote</button>
   </div>
 </body>
 </html>

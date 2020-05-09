@@ -1,7 +1,6 @@
 <?php
 
 // PHP - Random Quote Generator
-
 // Create the Multidimensional array of quote elements and name it quotes
 // Each inner array element should be an associative array
 $quote = array (
@@ -42,7 +41,26 @@ function getRandomQuote($array){
     $random_number = rand(0,4);
     return $array[$random_number];
 
-}
+};
+
+//this is a functions that prints an image along with the quote depending of the generated
+//quote from the function printQuote below
+
+function printImage($image){
+
+    if($image['source'] == 'Pain'){
+       echo "<img class=\"quote_image\" src=\"img\pain.jpg\">";
+    } elseif($image['source'] == 'Goku'){
+        echo "<img class=\"quote_image\" src=\"img\goku.jpg\">";
+     } elseif($image['source'] == 'Junko Kaname'){
+        echo "<img class=\"quote_image\" src=\"img\junko.jpg\">";
+     } elseif($image['source'] == 'L Lawliet'){
+        echo "<img class=\"quote_image\" src=\"img\lawliet.jpg\">";
+     } elseif($image['source'] == 'Armin Arlet'){
+        echo "<img class=\"quote_image\" src=\"img\arming.jpg\">";
+     } 
+
+};
 
 
 
@@ -74,10 +92,12 @@ function printQuote($array){
 
     //display the results
     echo $generated;
+    //displays images I have added to each quote
+    printImage($current_quote);
          
          
            
-}
+};
 
 
 ?>
