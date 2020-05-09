@@ -36,6 +36,13 @@ $quote = array (
 
 
 // Create the getRandomQuuote function and name it getRandomQuote
+function getRandomQuote($array){
+    //this function should take in an array of quotes
+    //select a random quote from array and return it
+    $random_number = rand(0,4);
+    return $array[$random_number];
+
+}
 
 
 
