@@ -1,6 +1,7 @@
 <?php 
-//displays erros to me on screen in case of any
 include 'inc/functions.php' ;
+
+//displays erros to me on screen in case of any
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
@@ -15,9 +16,7 @@ include 'inc/functions.php' ;
   <title>Random Quotes</title>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="inc/images.js"></script>
-
+  <link rel="stylesheet" href="css/styles.php">
 </head>
 <body>
   <div class="container">

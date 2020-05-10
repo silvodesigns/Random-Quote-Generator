@@ -79,8 +79,8 @@ function printQuote($array){
     */
     if($current_quote['citation']){
         $generated = "<p class=\"quote\">" . $current_quote['quote'] . "</p>
-            <p class=\"source\">" . $current_quote['source'] 
-                . "<span class=\"citation\">" . $current_quote['citation'] . "</span>
+            <p class=\"source\"> " . $current_quote['source'] 
+                . "- <span class=\"citation\">" . $current_quote['citation'] . "</span>
         </p>";
 
     } else {
