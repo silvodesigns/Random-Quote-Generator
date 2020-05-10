@@ -8,27 +8,32 @@ $quote = array (
         'source' => 'Junko Kaname',
         'quote'  => 'Just because you keep trying to to the righ thing, doesn\'t mean
         you are garanteed a happy ending.',
-        'citation' => 'Puella Magi'
+        'citation' => 'Puella Magi',
+        'category' => 'Morality'
    ),
     array(
         'source' => 'Pain',
         'quote' => 'To understand pain, you must know pain',
-        'citation' => 'Naturo Shippuden'
+        'citation' => 'Naturo Shippuden',
+        'category' => 'Struggle'
     ),
     array(
         'source' => 'Goku',
         'quote' => 'Power comes in a response to a need, not a desire. You have to create that need',
-        'citation' => 'Dragon Ball Z'
+        'citation' => 'Dragon Ball Z',
+        'category' => 'Responsability'
     ),
     array(
         'source' => 'L Lawliet',
         'quote' => 'By trying too hard, we put ourselves at a greater risk',
-        'citation' => 'Death Note'
+        'citation' => 'Death Note',
+        'category' => 'Philosophy'
     ),
     array(
         'source' => 'Armin Arlet',
         'quote' => 'A person who cannot give up anything , can change nothing',
-        'citation' => 'Attack on Titans'
+        'citation' => 'Attack on Titans',
+        'category' => 'Sacrifice'
     ),
 );
 
