@@ -8,6 +8,7 @@ $orange = "#b8714a";
 $yellow = "#d4cf3e";
 $green = "#36b55c";
 
+//store the value on an array to pull a random value using the rand() fx
 $colors = array($red, $blue, $orange, $yellow, $green);
 
 ?>
