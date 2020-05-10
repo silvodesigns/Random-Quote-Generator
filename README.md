@@ -6,7 +6,7 @@
 
  ## Usage
 
- Since this project servers an index.php file, you have to make sure you have a server
+ Since this project servers an `index.php` file, you have to make sure you have a server
  install locally in your computer such as MAMP in order for the project to work. Simply downloading
  the project and opening it up in the browser won't work.
 
