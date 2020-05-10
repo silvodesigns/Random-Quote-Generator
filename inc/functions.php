@@ -13,25 +13,25 @@ $quote = array (
    ),
     array(
         'source' => 'Pain',
-        'quote' => 'To understand pain, you must know pain',
+        'quote' => 'To understand pain, you must know pain.',
         'citation' => 'Naturo Shippuden',
         'category' => 'Struggle'
     ),
     array(
         'source' => 'Goku',
-        'quote' => 'Power comes in a response to a need, not a desire. You have to create that need',
+        'quote' => 'Power comes in a response to a need, not a desire. You have to create that need.',
         'citation' => 'Dragon Ball Z',
         'category' => 'Responsability'
     ),
     array(
         'source' => 'L Lawliet',
-        'quote' => 'By trying too hard, we put ourselves at a greater risk',
+        'quote' => 'By trying too hard, we put ourselves at a greater risk.',
         'citation' => 'Death Note',
         'category' => 'Philosophy'
     ),
     array(
         'source' => 'Armin Arlet',
-        'quote' => 'A person who cannot give up anything , can change nothing',
+        'quote' => 'A person who cannot give up anything , can change nothing.',
         'citation' => 'Attack on Titans',
         'category' => 'Sacrifice'
     ),
@@ -82,11 +82,12 @@ function printQuote($array){
     we assign the HTML without the span tag for it
 
     */
-    if($current_quote['citation']){
-        $generated = "<p class=\"quote\">" . $current_quote['quote'] . "</p>
-            <p class=\"source\"> " . $current_quote['source'] 
-                . "- <span class=\"citation\">" . $current_quote['citation'] . "</span>
-        </p>";
+    if($current_quote['citation'] && $current_quote['category'] ){
+        $generated = "<p class=\"quote\">" . $current_quote['quote'] . 
+        "<br/><span class=\"category\">" .$current_quote['category'] . "</span></p>
+        <p class=\"source\"> " . $current_quote['source'] 
+         . "- <span class=\"citation\">" . $current_quote['citation'] . "</span>
+         </p>";
 
     } else {
         $generated = "<p class=\"quote\">" . $current_quote['quote'] . "</p>

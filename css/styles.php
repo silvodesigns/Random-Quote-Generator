@@ -75,5 +75,12 @@ body, html {
   width:500px;
 }
 
+.category {
+  font-size:1rem;
+  border: 2px solid black;
+  border-radius:25%;
+  padding:20px;
+}
+
 
 
